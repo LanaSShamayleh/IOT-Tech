@@ -1,35 +1,45 @@
 
 
-alert("THE WEBSITE IS ONLY FOR THE OFFICER AND CLIENT AND THEY HAVE THEIR OWN PORTALS IN THE BOTTOM OF THE WEBSITE, SO PLEASE DEAR! SELECT THE TYPE OF YOUR PORTAL IN THE FOLLOWING ASKING BOX ");
-
+for (var n = 0; n < 3; n++) {
+    alert("THE WEBSITE IS ONLY FOR THE OFFICER AND CLIENT AND THEY HAVE THEIR OWN PORTALS IN THE BOTTOM OF THE WEBSITE, SO PLEASE DEAR! SELECT THE TYPE OF YOUR PORTAL IN THE FOLLOWING ASKING BOX ");
+}
 
 
 var VisitorType = prompt("Who are you ?");
 
-while (VisitorType !== "client" && VisitorType1 != "offficer") {
+
+while (VisitorType !== "client" && VisitorType !== "officer") {
     VisitorType = prompt(' To See this page , You must be an officer or a Client . So , You can only write client or officer ');
 }
 
+
 var NumberOfPortals = prompt('how many portals do you want?');
 
-var portals = '';
-var result = '';
 
-if (VisitorType == 'officer') {
+if (NumberOfPortals == 1 || VisitorType == 'officer' ) {
 
-    portals = '<img src="Pictures/OfficerPortal.PNG"/>';
+    var portals = '<button class="block">Officer Portal</button><br>';
+    var result = '';
 
-} else if (VisitorType == 'client') {
+    for (var s = 0; s < 2; s++) {
 
-    portals = '<img src="Pictures/ClientPortal.PNG"/>';
+        result += portals;
+    }
+
+    document.write(result);
+
+} else {
+
+    var portals = '<button class="block">Clients Portal</button><br>';
+    var result = '';
+    for (var s = 0; s < 6; s++) {
+
+        result += portals;
+    }
+
+    document.write(result)
+
 }
-
-
-for (var i = 0; i < NumberOfPortals; i++) {
-    result += painting;
-}
-
-console.log(result);
 
 
 
@@ -61,6 +71,12 @@ if (VisitorType == 'officer') {
 
     }
 }
+
+for (var i = 0; i < NumberOfPortals; i++) {
+    result += painting;
+}
+
+console.log(result);
 
 console.log('WELCOME TO TECHNOLOGY WORLD, PLEASE ! IF YOU ARE A NEW VISITOR , DO NOT HESITATE TO REGISTER TO INFORM YOU WITH  OUR NEW PRODUCTS ');
 
