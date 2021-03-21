@@ -1,5 +1,3 @@
-
-
 for (var n = 0; n < 3; n++) {
     alert("THE WEBSITE IS ONLY FOR THE OFFICER AND CLIENT AND THEY HAVE THEIR OWN PORTALS IN THE BOTTOM OF THE WEBSITE, SO PLEASE DEAR! SELECT THE TYPE OF YOUR PORTAL IN THE FOLLOWING ASKING BOX ");
 }
@@ -72,11 +70,6 @@ if (VisitorType == 'officer') {
     }
 }
 
-for (var i = 0; i < NumberOfPortals; i++) {
-    result += painting;
-}
-
-console.log(result);
 
 console.log('WELCOME TO TECHNOLOGY WORLD, PLEASE ! IF YOU ARE A NEW VISITOR , DO NOT HESITATE TO REGISTER TO INFORM YOU WITH  OUR NEW PRODUCTS ');
 
