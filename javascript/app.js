@@ -57,6 +57,8 @@ var getNumbersofPortals = function () {
 
 }
 
+
+
 // Second Part - To get a Visitor the informations which may used to log into own's portal 
 
 
