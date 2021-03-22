@@ -14,12 +14,11 @@ while (VisitorType !== "client" && VisitorType !== "officer") {
 var NumberOfPortals = prompt('how many portals do you want?');
 
 
-if (NumberOfPortals == 1 || VisitorType == 'officer' ) {
+if (NumberOfPortals > 1) {
 
-    var portals = '<button class="block">Officer Portal</button><br>';
+    var portals = '<button class="block">User Portal</button><br>';
     var result = '';
-
-    for (var s = 0; s < 2; s++) {
+    for (var s = 0; s < NumberOfPortals; s++) {
 
         result += portals;
     }
@@ -28,14 +27,17 @@ if (NumberOfPortals == 1 || VisitorType == 'officer' ) {
 
 } else {
 
-    var portals = '<button class="block">Clients Portal</button><br>';
+    var portals = '<button class="block">User Portal</button><br>';
     var result = '';
-    for (var s = 0; s < 6; s++) {
+
+    for (var s = 0; s < NumberOfPortals; s++) {
 
         result += portals;
     }
 
-    document.write(result)
+    document.write(result);
+
+
 
 }
 
