@@ -1,0 +1,106 @@
+/* margin:top right bottom left */
+
+/* inline-block you can add width height to the elemnts as well as top and bottom padding and margin not like inline */
+
+body{
+    background-color: whitesmoke;
+    margin: 0%;
+}
+
+header{
+    color: #d46ea3;
+    background-color: #32045d ;
+    height: 80px;
+}
+
+header nav{
+    float: right;
+    width: 30%;
+    margin-top: 15px;
+}
+
+header h1{
+    float: left; 
+    margin-left: 40px;
+}
+
+header nav ul li{
+    display: inline-block;
+    margin-left: 5%;
+    
+ 
+
+}
+header nav ul li a{
+    color: rgb(212, 110, 163);
+    text-decoration: none;
+    font-weight: 800;
+}
+
+#first{
+    background-color: #f4abc4;
+    width: 70%;
+    height: 300px;
+    text-align: center;
+    margin: 30px 0 30px 15%;
+}
+
+#first h3{
+    font-size: 40px;
+    padding-top: 30px;
+    color: #32045d ;
+}
+#first p{
+    font-size: 20px;
+    color: #32045d ;
+}
+
+#second{
+    color: #32045d ;
+    background-color: #f4abc4;
+    margin-bottom: 30px;
+}
+
+
+.image-container{
+    text-align: center;
+    display: inline-block;
+    height: 450px;
+    width: 30%;
+    margin-left: 30px;
+}
+.image-container img{
+    margin-bottom: 20px;
+    height: 90%;
+}
+
+
+#third{
+    background-color: #f4abc4;
+    margin-bottom: 30px;
+}
+#third div{
+    margin-left: 60px;
+}
+
+#third div img{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+
+
+footer{
+    height: 100px;
+    color:#f4abc4; 
+    background-color:hsl(271.01,91.75%,19.02%);
+}
+
+footer p{
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100px;
+    font-weight: 800;
+}
