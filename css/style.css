@@ -1,41 +1,109 @@
 /* Styling the html page using CSS */
 
 body{
-    background-color:#f6dfeb;
+    background-color:#ca84a8;
     margin: 0%;
 }
 
 header{
-    color:black;
-    background-color:rgb(143, 112, 151) ;
+  background-color:rgba(75, 15, 99, 0.884) ;
     height: 80px;
+  color: black;
+  margin-bottom: 50px;
+ }
+
+
+ header nav{
+
+  background-color:rgba(75, 15, 99, 0.884) ;
+  float: right;
+  width: 100%;
+  margin-top: 15px;
 }
 
-header nav{
-    float: right;
-    width: 30%;
-    margin-top: 15px;
-    margin-right: 0px;
+header nav ul li{
+
+  display: inline-block;
+  margin-left: 10%;
+  
+
 }
 
-.btn {
-    background-color: rgb(143, 112, 151);
-    border: none;
-    color:black;
-    padding: 20px 16px;
-    font-size: 20px;
-    cursor: pointer;
-    font-weight: bolder;
-    padding: 8px ; 
-    float: inline-end;
-    align-content: stretch;
-    margin-right: 0px ;
-    
-  }
+header nav ul li a{
+
+  text-decoration: none;
+  font-weight: 800;
+}
+
+
+
+header h1 {
+  
+font-style: oblique;
+  color: black;
+  font-size:xx-large ; 
+  float:left; 
+  margin-left: 20px;
+}
+
+.p2{
+
+  background-color:#ca84a8;
+  font-family: "Cursive", Times, serif;
+  font-size: larger ;
+  font-weight: bolder;
+  color:black;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-right:15px ;
+  margin-left:15px ;
+  text-align: justify;
+}
+
+
+.first {
+
+background-color:#ca84a8;
+font-family: "Cursive", Times, serif;
+font-size: larger;
+font-weight: bolder;
+color:black;
+margin-bottom:0px ;
+margin-right:15px ;
+margin-left: 15px;
+margin-top:10px;
+}
+
+.first1 {
+
+background-color:#ca84a8;
+font-family: "Cursive", Times, serif;
+font-size: medium;
+color:black;
+margin-bottom:10px ;
+margin-top: 20px;
+text-align: center;
+font-weight: bolder;
+font-style: oblique;
+
+}
+
+
+#second{
+  color:black ;
+  background-color:#ca84a8;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  margin-left: 60px;
+  align-content: space-between;
+  margin-right: 60px ;
+
+}
+
   
 
   .btn1 {
-    background-color:  darkgrey;
+    background-color: rgb(109, 85, 109);
     border:none ;
     color:black;
     font-size: x-small;
@@ -43,62 +111,54 @@ header nav{
     font-weight: bolder;
     padding: 12px ; 
     position: relative;
-    
+  
   }
 
   .btn:hover {
-    background-color: RoyalBlue;
+    background-color:rgba(13, 2, 59, 0.774)oyalBlue;
   }
 
-header h1{
-    
-    margin-left: 70px;
-    font-weight: bolder;
+
+  .btn2 {
+
+    background-color:#ca84a8;
+    border: rgb(20, 2, 20) ;
+    color:rgb(143, 112, 151);
+    font-size: small;
+    cursor: pointer;
+    font-weight: bolder; 
+    margin-left:0px ;
+    margin-right: 0px;
     text-align: justify;
-    font-family: fantasy;
-    float: left;
-    
-}
 
-.p1 {
-    font-family: "Fantasy", Times, serif;
-    font-size: large;
-    font-weight: bolder;
-    margin-left: 5px;
   }
-.p2 {
-    font-family: "Cursive", Times, serif;
+
+  .button {
+
+    background-color:#ca84a8;
+    border: rgb(20, 2, 20) ;
+    background-color:rgba(75, 15, 99, 0.884) ;
     font-size: larger;
-    font-weight: bolder;
-    margin-right:5px ;
+    cursor: pointer;
+    font-weight: bolder; 
+    margin-left:10px ;
+    margin-right: 10px;
+    font-style: normal;
+    text-align: justify;
+
+
   }
-
- .p3 {
-font-style: oblique;
-font-size: medium;
-font-weight: bolder;
-text-align: center;
-
-}
-
-#second{
-    color:black ;
-    background-color: #f6dfeb;
-    margin-bottom: 30px;
-    position: relative;
-    margin-left: 50px;
-    align-content: space-between;}
-
 
 .block {
     display: block;
     width: 100% ;
     background-color: #5f034b9f;
     color:black;  
-    font-size: 20px;
     text-align: center;
     position: static ;
-    font-size: large;
+    font-size: x-large;
+    font-weight: bolder;
+    font-style: oblique;
 }
 
 .block:hover {
@@ -106,34 +166,28 @@ text-align: center;
     color: black;
 }
 
-.city {
-    background-color: #f6dfeb;
-    color:black;
-    margin-left: 25px;
-
-  }
-
-
 footer{
-   
-    background-color: darkgrey;
-    border: none;
-    color:black;
-    font-size: x-small;
-    cursor: pointer;
-    font-weight: bolder;
-    height: 40px;
-    align-items: center;
-    margin-bottom: 0px;
-}
 
- footer nav{
-    width: 50%;
-    margin-top: 15px;
-    margin-bottom: 0px;
-    background-color: darkgrey;
-    position: relative ;
     
+  background-color: rgb(109, 85, 109);
+  height: 40%;
+    width: 100%;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+ footer nav1{
+
+    width: 100%;
+    background-color: rgb(109, 85, 109);
+    color:black;
+    font-size: large;
+    height: 40%;
+    float :left;
+    display: table-row;
+    padding-top:0px ;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bolder;
 } 
 
 
