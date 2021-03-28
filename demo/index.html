@@ -1,9 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <!-- Head-Title  -->
 
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
         INTELLIGENCE IOT
@@ -338,21 +341,6 @@
     <br>
 
 
-    <section>
-
-        <div class="block">
-
-            <script>
-
-                document.write(getNumbersofPortals())
-
-            </script>
-
-        </div>
-
-    </section>
-
-
 
     <!-- footer of the page  -->
 
@@ -392,107 +380,78 @@
 
     </footer>
 
+
     <!-- JavaScript Code of the page  -->
 
-    <script>
+
+        <script>
 
 
-        // Welcome Message 
+            // Welcome Message 
 
-        console.log('WELCOME TO TECHNOLOGY WORLD, PLEASE ! IF YOU ARE A NEW VISITOR , DO NOT HESITATE TO REGISTER TO INFORM YOU WITH  OUR NEW PRODUCTS ');
-
-
-        for (var n = 0; n < 3; n++) {
-            alert("THE WEBSITE IS ONLY FOR THE OFFICER AND CLIENT AND THEY HAVE THEIR OWN PORTALS IN THE BOTTOM OF THE WEBSITE, SO PLEASE DEAR! SELECT THE TYPE OF YOUR PORTAL IN THE FOLLOWING ASKING BOX ");
-        }
+            console.log('WELCOME TO TECHNOLOGY WORLD, PLEASE ! IF YOU ARE A NEW VISITOR , DO NOT HESITATE TO REGISTER TO INFORM YOU WITH  OUR NEW PRODUCTS ');
 
 
-        // First Part - To Know the visitor type
-
-
-        var VisitorType = prompt("Who are you ?");
-
-
-        var getcorrectvisitorType = function () {
-
-            while (VisitorType !== "client" && VisitorType !== "officer") {
-                VisitorType = prompt(' To See this page , You must be an officer or a Client . So , You can only write client or officer ');
+            for (var n = 0; n < 3; n++) {
+                alert("THE WEBSITE IS ONLY FOR THE OFFICER AND CLIENT AND THEY HAVE THEIR OWN PORTALS IN THE BOTTOM OF THE WEBSITE, SO PLEASE DEAR! SELECT THE TYPE OF YOUR PORTAL IN THE FOLLOWING ASKING BOX ");
             }
 
-        }
 
-        getcorrectvisitorType();
-
-        let NumberOfPortals = prompt('how many portals do you want?');
-
-        var getNumbersofPortals = function () {
-
-            if (NumberOfPortals > 1) {
-
-                let portals = '<button class="block">User Portal</button><br>';
-                let result = '';
-
-                for (let s = 0; s < NumberOfPortals; s++) {
-
-                    result += portals;
-                }
+            // First Part - To Know the visitor type
 
 
+            var VisitorType = prompt("Who are you ?");
 
-            } else {
 
-                var portals = '<button class="block">User Portal</button><br>';
-                var result = '';
+            var getcorrectvisitorType = function () {
 
-                for (var s = 0; s < NumberOfPortals; s++) {
-
-                    result += portals;
+                while (VisitorType !== "client" && VisitorType !== "officer") {
+                    VisitorType = prompt(' To See this page , You must be an officer or a Client . So , You can only write client or officer ');
                 }
 
             }
-
-            return result
-
-        }
-
-        // Second Part - To get a Visitor the informations which may used to log into own's portal 
+            
+            getcorrectvisitorType();
 
 
-        var getVistorInformation = function () {
-
-            if (VisitorType == 'officer') {
-
-                var myWindow = window.open("", "MsgWindow", "width=400,height=400");
-
-                const Msg = 'THIS IS OFFICER WINDOW . CLICK ON YOUR PORTAL BUTTON THEN ENTER YOUR BRANCH , JOB NUMBER AND PASSWORD.  ';
-
-                myWindow.document.write(Msg.bold());
+            // Second Part - To get a Visitor the informations which may used to log into own's portal 
 
 
-            } else {
+            var getVistorInformation = function () {
 
+                if (VisitorType == 'officer') {
 
-                if (VisitorType == 'client') {
                     var myWindow = window.open("", "MsgWindow", "width=400,height=400");
-                    const Msg = 'THIS IS CLIENT WINDOW . CLICK ON YOUR PORTAL BUTTON THEN ENTER YOUR USERNAME AND PASSWORD. ';
+
+                    const Msg = 'THIS IS OFFICER WINDOW . CLICK ON YOUR PORTAL BUTTON THEN ENTER YOUR BRANCH , JOB NUMBER AND PASSWORD.  ';
 
                     myWindow.document.write(Msg.bold());
+
 
                 } else {
 
 
-                    var myWindow = window.open("", "MsgWindow", "width=400,height=400");
-                    const Msg = 'THIS IS A WELCOME WINDOW . IF YOU NEED THIS PAGE , PLEASE REGISTER AS A CLINENT IN THIS PAGE :"IOT-ENTELLIGENCE-REGEISTERTION-PAGE.SRC.JO/?chlang=eng" ';
+                    if (VisitorType == 'client') {
+                        var myWindow = window.open("", "MsgWindow", "width=400,height=400");
+                        const Msg = 'THIS IS CLIENT WINDOW . CLICK ON YOUR PORTAL BUTTON THEN ENTER YOUR USERNAME AND PASSWORD. ';
 
-                    myWindow.document.write(Msg.bold());
+                        myWindow.document.write(Msg.bold());
 
+                    } else {
+
+
+                        var myWindow = window.open("", "MsgWindow", "width=400,height=400");
+                        const Msg = 'THIS IS A WELCOME WINDOW . IF YOU NEED THIS PAGE , PLEASE REGISTER AS A CLINENT IN THIS PAGE :"IOT-ENTELLIGENCE-REGEISTERTION-PAGE.SRC.JO/?chlang=eng" ';
+
+                        myWindow.document.write(Msg.bold());
+
+                    }
                 }
             }
-        }
+    getVistorInformation();
 
-        getVistorInformation();
 
-    </script>
+        </script>
 
 </body>
 
